@@ -35,7 +35,7 @@
 <main>
 
 	<!-- HERO : carrousel de vidéos très courtes -->
-	<section class="hero" id="accueil">
+	<section class="hero position-relative overflow-hidden vh-100 d-flex align-items-center justify-content-center text-center" id="accueil">
 		<div class="hero__slides" id="slides">
 			<!-- Photos animées (effet Ken Burns). Pour une vraie vidéo : renseigner data-src (mp4/webm, 3–6 s, sans son, < 3 Mo) -->
 			<div class="slide slide--1 is-active" data-src="" data-label="La Cour de l'Abbaye">
@@ -53,9 +53,9 @@
 		</div>
 		<div class="hero__shade"></div>
 
-		<div class="hero__content">
-			<img class="hero__logo" src="assets/img/logo-nude.png" alt="Orée" width="420" height="143">
-			<p class="hero__tagline">Une cuisine exigeante de haute précision,<br>servie avec la simplicité d'une maison qui aime recevoir.</p>
+		<div class="position-relative z-2 px-4">
+			<img class="hero__logo d-block mx-auto mb-4" src="assets/img/logo-nude.png" alt="Orée" width="420" height="143">
+			<p class="hero__tagline fw-light mb-4">Une cuisine exigeante de haute précision,<br>servie avec la simplicité d'une maison qui aime recevoir.</p>
 			<a href="#reserver" class="btn btn-oree">Réserver une table</a>
 		</div>
 
@@ -68,16 +68,16 @@
 		<div class="container">
 			<div class="row justify-content-center text-center">
 				<div class="col-lg-8">
-					<p class="eyebrow eyebrow--light">Le lieu</p>
+					<p class="eyebrow mb-3 text-uppercase text-matcha">Le lieu</p>
 					<h2>Une table où l'on se sent bien</h2>
-					<p class="lead">Nous avons imaginé Orée comme une table où l'on se sent bien. Notre générosité se retrouve dans notre façon de recevoir et de cuisiner. Au fil des saisons, nous préparons chaque plat avec soin, pour le plaisir de bien manger.</p>
+					<p class="lead fw-normal">Nous avons imaginé Orée comme une table où l'on se sent bien. Notre générosité se retrouve dans notre façon de recevoir et de cuisiner. Au fil des saisons, nous préparons chaque plat avec soin, pour le plaisir de bien manger.</p>
 					<p>Notre carte s'inspire de la forêt, des balades et des cueillettes. La cuisine est exigeante, l'expérience est détendue.</p>
 				</div>
 			</div>
 
 			<div class="row g-3 mt-5">
 				<div class="col-md-7">
-					<figure class="ph ph--tall m-0"><span>Photo · la salle</span></figure>
+					<figure class="ph ph--tall h-100 m-0"><span>Photo · la salle</span></figure>
 				</div>
 				<div class="col-md-5 d-flex flex-column gap-3">
 					<figure class="ph flex-fill m-0"><span>Photo · détail liège / pierre</span></figure>
@@ -87,17 +87,17 @@
 
 			<div class="row g-5 mt-4 text-center">
 				<article class="col-md-4">
-					<img class="pillar__ill" src="assets/img/ill-chanterelle.png" alt="">
+					<img class="pillar__ill d-block mx-auto mb-3" src="assets/img/ill-chanterelle.png" alt="">
 					<h3>Le produit &amp; la nature</h3>
 					<p>Le végétal, les saisons, la matière et le vivant comme inspirations. Des assiettes belles, lisibles et gourmandes.</p>
 				</article>
 				<article class="col-md-4">
-					<img class="pillar__ill" src="assets/img/ill-leaves.png" alt="">
+					<img class="pillar__ill d-block mx-auto mb-3" src="assets/img/ill-leaves.png" alt="">
 					<h3>L'énergie &amp; la convivialité</h3>
 					<p>Un accueil attentif, avec le sourire et la simplicité. Une salle où l'on se sent immédiatement à sa place.</p>
 				</article>
 				<article class="col-md-4">
-					<img class="pillar__ill" src="assets/img/ill-cep.png" alt="">
+					<img class="pillar__ill d-block mx-auto mb-3" src="assets/img/ill-cep.png" alt="">
 					<h3>L'exigence &amp; la technique</h3>
 					<p>Une cuisine très précise qui reste généreuse et lisible. La technique s'efface derrière le plaisir.</p>
 				</article>
@@ -105,7 +105,7 @@
 
 			<div class="row g-5 mt-5 align-items-center">
 				<div class="col-md-7">
-					<img class="img-fluid photo" src="assets/img/vue_ensemble.jpg" alt="Vue aérienne du restaurant Orée et de son jardin, dans le domaine de la Fondation" loading="lazy" width="1600" height="1199">
+					<img class="img-fluid w-100 object-fit-cover" src="assets/img/vue_ensemble.jpg" alt="Vue aérienne du restaurant Orée et de son jardin, dans le domaine de la Fondation" loading="lazy" width="1600" height="1199">
 				</div>
 				<div class="col-md-5">
 					<h2>La Cour de l'Abbaye</h2>
@@ -115,7 +115,7 @@
 
 			<div class="row mt-5">
 				<div class="col-12">
-					<img class="img-fluid photo lieu__terrasse" src="assets/img/exterieur.jpg" alt="La terrasse d'Orée sous les arbres, dans les jardins de la Fondation" loading="lazy">
+					<img class="img-fluid w-100 object-fit-cover lieu__terrasse" src="assets/img/exterieur.jpg" alt="La terrasse d'Orée sous les arbres, dans les jardins de la Fondation" loading="lazy">
 				</div>
 			</div>
 		</div>
@@ -127,61 +127,61 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-9 col-xl-8">
 					<div class="text-center">
-						<p class="eyebrow">La carte</p>
+						<p class="eyebrow mb-3 text-uppercase text-terracotta">La carte</p>
 						<h2>Au fil des saisons et des arrivages</h2>
 					</div>
 
-					<h3 class="menu__title">Nos formules</h3>
+					<h3 class="fs-4 mt-5 mb-3 text-terracotta">Nos formules</h3>
 					<ul class="list-unstyled formules">
 						<li>
-							<div class="row-line"><h4>Cimes</h4><span class="price">39 €</span></div>
-							<p class="note">Le midi</p>
+							<div class="d-flex justify-content-between align-items-baseline gap-4"><h4>Cimes</h4><span class="text-nowrap">39 €</span></div>
+							<p class="note text-uppercase text-terracotta">Le midi</p>
 							<p>Chaque midi, notre équipe vous présente de vive voix le plat du jour, inspiré par la saison. Vous choisissez ensuite une entrée et un dessert à la carte.</p>
 						</li>
 						<li>
-							<div class="row-line"><h4>Hêtre</h4><span class="price">55 €</span></div>
-							<p class="note">Entrée, plat, dessert</p>
+							<div class="d-flex justify-content-between align-items-baseline gap-4"><h4>Hêtre</h4><span class="text-nowrap">55 €</span></div>
+							<p class="note text-uppercase text-terracotta">Entrée, plat, dessert</p>
 							<p>Composez votre menu au gré de vos envies : une entrée, un plat et un dessert choisis à la carte.</p>
 						</li>
 						<li>
-							<div class="row-line"><h4>Lichen</h4><span class="price">79 €</span></div>
-							<p class="note">Le soir</p>
+							<div class="d-flex justify-content-between align-items-baseline gap-4"><h4>Lichen</h4><span class="text-nowrap">79 €</span></div>
+							<p class="note text-uppercase text-terracotta">Le soir</p>
 							<p>Le soir, laissez-vous guider sur les sentiers d'un menu en cinq temps.</p>
 						</li>
 					</ul>
 
 					<div class="row gx-5 mt-2">
 						<div class="col-md-6">
-							<h3 class="menu__title">Entrées</h3>
+							<h3 class="fs-4 mt-5 mb-3 text-terracotta">Entrées</h3>
 							<ul class="list-unstyled dishes">
-								<li><div class="row-line"><h4>Omble chevalier maturé en cire d'abeille</h4><span class="price">15 €</span></div><p>Carotte marinée, cédrat et pollen</p></li>
-								<li><div class="row-line"><h4>Cèpe de nos montagnes fumé</h4><span class="price">15 €</span></div><p>Corne d'abondance, royale d'épicéa et bouillon de lard</p></li>
+								<li><div class="d-flex justify-content-between align-items-baseline gap-4"><h4>Omble chevalier maturé en cire d'abeille</h4><span class="text-nowrap">15 €</span></div><p>Carotte marinée, cédrat et pollen</p></li>
+								<li><div class="d-flex justify-content-between align-items-baseline gap-4"><h4>Cèpe de nos montagnes fumé</h4><span class="text-nowrap">15 €</span></div><p>Corne d'abondance, royale d'épicéa et bouillon de lard</p></li>
 							</ul>
-							<h3 class="menu__title">Desserts</h3>
+							<h3 class="fs-4 mt-5 mb-3 text-terracotta">Desserts</h3>
 							<ul class="list-unstyled dishes">
-								<li><div class="row-line"><h4>Entremets au praliné de bourgeon de sapin</h4><span class="price">11 €</span></div><p>Poires confites, mousse légère à la vanille de Tahiti</p></li>
-								<li><div class="row-line"><h4>La noisette du Piémont dans tous ses états</h4><span class="price">11 €</span></div><p>Caramel praliné coulant, biscuit dacquoise et mousseline noisette</p></li>
+								<li><div class="d-flex justify-content-between align-items-baseline gap-4"><h4>Entremets au praliné de bourgeon de sapin</h4><span class="text-nowrap">11 €</span></div><p>Poires confites, mousse légère à la vanille de Tahiti</p></li>
+								<li><div class="d-flex justify-content-between align-items-baseline gap-4"><h4>La noisette du Piémont dans tous ses états</h4><span class="text-nowrap">11 €</span></div><p>Caramel praliné coulant, biscuit dacquoise et mousseline noisette</p></li>
 							</ul>
 						</div>
 						<div class="col-md-6">
-							<h3 class="menu__title">Plats</h3>
+							<h3 class="fs-4 mt-5 mb-3 text-terracotta">Plats</h3>
 							<ul class="list-unstyled dishes">
-								<li><div class="row-line"><h4>Pressé d'aile de raie</h4><span class="price">33 €</span></div><p>Poireau au barbecue, giancale de la maison Baud et sauce safranée</p></li>
-								<li><div class="row-line"><h4>Canard colvert sauvage</h4><span class="price">33 €</span></div><p>Cuit sur le coffre, la cuisse confite, oignon brûlé et jus de canard</p></li>
-								<li><div class="row-line"><h4>Plat du jour</h4><span class="price">19 €</span></div><p>Une création à découvrir chaque jour auprès de notre équipe</p></li>
+								<li><div class="d-flex justify-content-between align-items-baseline gap-4"><h4>Pressé d'aile de raie</h4><span class="text-nowrap">33 €</span></div><p>Poireau au barbecue, giancale de la maison Baud et sauce safranée</p></li>
+								<li><div class="d-flex justify-content-between align-items-baseline gap-4"><h4>Canard colvert sauvage</h4><span class="text-nowrap">33 €</span></div><p>Cuit sur le coffre, la cuisse confite, oignon brûlé et jus de canard</p></li>
+								<li><div class="d-flex justify-content-between align-items-baseline gap-4"><h4>Plat du jour</h4><span class="text-nowrap">19 €</span></div><p>Une création à découvrir chaque jour auprès de notre équipe</p></li>
 							</ul>
-							<img class="menu__ill d-block mx-auto" src="assets/img/ill-branch.png" alt="" width="260">
+							<img class="d-block mx-auto mt-5 opacity-75" src="assets/img/ill-branch.png" alt="" width="260">
 						</div>
 					</div>
 
-					<p class="text-center small menu__download"><a class="link" href="assets/menu_oree.pdf">Télécharger la carte (PDF)</a></p>
+					<p class="text-center small mt-5 mb-4"><a class="link" href="assets/menu_oree.pdf">Télécharger la carte (PDF)</a></p>
 
 					<div class="row g-3 mt-1">
 						<div class="col-6">
-							<img class="img-fluid photo plat" src="assets/img/plat1.jpg" alt="Assiette de la carte, sur porcelaine blanche" loading="lazy" width="1600" height="1200">
+							<img class="img-fluid w-100 object-fit-cover plat" src="assets/img/plat1.jpg" alt="Assiette de la carte, sur porcelaine blanche" loading="lazy" width="1600" height="1200">
 						</div>
 						<div class="col-6">
-							<img class="img-fluid photo plat" src="assets/img/plat2.jpg" alt="Tartare et jeunes pousses de laitue sur assiette noire" loading="lazy" width="1600" height="1200">
+							<img class="img-fluid w-100 object-fit-cover plat" src="assets/img/plat2.jpg" alt="Tartare et jeunes pousses de laitue sur assiette noire" loading="lazy" width="1600" height="1200">
 						</div>
 					</div>
 				</div>
@@ -194,10 +194,10 @@
 		<div class="container">
 			<div class="row g-5 align-items-center">
 				<div class="col-md-6">
-					<img class="img-fluid photo" src="assets/img/julien.jpg" alt="Le chef Julien Guiraudou, derrière le comptoir d'Orée" loading="lazy" width="1600" height="1066">
+					<img class="img-fluid w-100 object-fit-cover" src="assets/img/julien.jpg" alt="Le chef Julien Guiraudou, derrière le comptoir d'Orée" loading="lazy" width="1600" height="1066">
 				</div>
 				<div class="col-md-6">
-					<p class="eyebrow eyebrow--nude">L'équipe</p>
+					<p class="eyebrow mb-3 text-uppercase text-nude opacity-75">L'équipe</p>
 					<h2>Julien Guiraudou</h2>
 					<p>Formé en alternance à l'école Ferrandi Paris, où il a été élu Meilleur Apprenti de France, Julien a fait ses armes dans la brigade du Mandarin Oriental de Thierry Marx, au Greenhouse à Londres (2 étoiles), puis au Japon au restaurant Kichisen (3 étoiles). Il a ensuite été sous-chef en Relais &amp; Châteaux, au Jiva Hill puis au Domaine des Hauts de Loire (2 étoiles).</p>
 					<p>Sa cuisine repose sur la passion du produit et la culture du détail.</p>
@@ -211,24 +211,24 @@
 		<div class="container">
 			<div class="row justify-content-center text-center">
 				<div class="col-lg-8">
-					<img class="sprig sprig--light" src="assets/img/ill-sprig.png" alt="" width="56">
+					<img class="sprig--light d-block mx-auto mb-4" src="assets/img/ill-sprig.png" alt="" width="56">
 					<h2>Réserver une table</h2>
-					<p class="lead">Mardi au samedi · 12h00 – 21h30</p>
+					<p class="lead fw-normal">Mardi au samedi · 12h00 – 21h30</p>
 					<p><a href="#" class="btn btn-oree btn-oree--big">Réserver en ligne</a></p>
 					<p class="small">ou par téléphone au <a class="link link--light" href="tel:+33450557890">04 50 55 78 90</a></p>
 
-					<div class="row g-4 infos">
+					<div class="row g-4 mt-5 pt-5 border-top border-light border-opacity-25">
 						<div class="col-md-4">
-							<h4>Adresse</h4>
-							<p>15 chemin de l'abbaye<br>74940 Annecy-le-Vieux</p>
+							<h4 class="fw-bold text-matcha mb-2">Adresse</h4>
+							<p class="small mb-0">15 chemin de l'abbaye<br>74940 Annecy-le-Vieux</p>
 						</div>
 						<div class="col-md-4">
-							<h4>Contact</h4>
-							<p><a class="link link--light" href="mailto:oree@gmail.com">oree@gmail.com</a><br><a class="link link--light" href="tel:+33450557890">04 50 55 78 90</a></p>
+							<h4 class="fw-bold text-matcha mb-2">Contact</h4>
+							<p class="small mb-0"><a class="link link--light" href="mailto:oree@gmail.com">oree@gmail.com</a><br><a class="link link--light" href="tel:+33450557890">04 50 55 78 90</a></p>
 						</div>
 						<div class="col-md-4">
-							<h4>Suivez-nous</h4>
-							<p><a class="link link--light" href="#">@oreeannecy</a></p>
+							<h4 class="fw-bold text-matcha mb-2">Suivez-nous</h4>
+							<p class="small mb-0"><a class="link link--light" href="#">@oreeannecy</a></p>
 						</div>
 					</div>
 				</div>
@@ -237,9 +237,9 @@
 	</section>
 </main>
 
-<footer class="footer text-center">
-	<img src="assets/img/logo-nude.png" alt="Orée" width="90" height="31">
-	<p>© 2026 Orée · Annecy-le-Vieux · <a href="#">Mentions légales</a></p>
+<footer class="bg-forest-deep text-nude small text-center py-5 px-3">
+	<img class="d-block mx-auto mb-3" src="assets/img/logo-nude.png" alt="Orée" width="90" height="31">
+	<p class="mb-0 opacity-75">© 2026 Orée · Annecy-le-Vieux · <a href="#">Mentions légales</a></p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
