@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orée — Restaurant à Annecy · Cour de l'Abbaye</title>
+  <meta name="description" content="Orée, table gastronomique à Annecy-le-Vieux, dans le domaine de la Fondation d'Art Christian Réal – La Cour de l'Abbaye. Une cuisine exigeante de haute précision, servie avec la simplicité d'une maison qui aime recevoir.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <a href="#accueil" class="header__logo" aria-label="Orée — accueil">
+    <img src="assets/img/logo-nude.png" alt="Orée" width="120" height="41">
+  </a>
+  <nav class="header__nav" aria-label="Navigation principale">
+    <a href="#maison">La maison</a>
+    <a href="#carte">La carte</a>
+    <a href="#producteurs">Producteurs</a>
+    <a href="#lieu">Le lieu</a>
+  </nav>
+  <a href="#reserver" class="btn btn--small">Réserver</a>
+</header>
+
+<main>
+
+  <!-- HERO : carrousel de vidéos très courtes -->
+  <section class="hero" id="accueil">
+    <div class="hero__slides" id="slides">
+      <!-- Remplacer data-src par les vidéos (mp4/webm, 3–6 s, sans son, < 3 Mo) -->
+      <div class="slide slide--1 is-active" data-src="" data-label="La forêt">
+        <img class="slide__ill" src="assets/img/ill-fern.png" alt="">
+      </div>
+      <div class="slide slide--2" data-src="" data-label="La cueillette">
+        <img class="slide__ill" src="assets/img/ill-cep.png" alt="">
+      </div>
+      <div class="slide slide--3" data-src="" data-label="L'assiette">
+        <img class="slide__ill" src="assets/img/ill-chanterelle.png" alt="">
+      </div>
+      <div class="slide slide--4" data-src="" data-label="La salle">
+        <img class="slide__ill" src="assets/img/ill-rings.png" alt="">
+      </div>
+    </div>
+    <div class="hero__shade"></div>
+
+    <div class="hero__content">
+      <img class="hero__logo" src="assets/img/logo-nude.png" alt="Orée" width="420" height="143">
+      <p class="hero__tagline">Une cuisine exigeante de haute précision,<br>servie avec la simplicité d'une maison qui aime recevoir.</p>
+      <a href="#reserver" class="btn">Réserver une table</a>
+    </div>
+
+    <div class="hero__dots" id="dots" role="tablist" aria-label="Diaporama"></div>
+    <a href="#maison" class="hero__scroll" aria-label="Descendre"><span></span></a>
+  </section>
+
+  <!-- LA MAISON -->
+  <section class="section section--forest" id="maison">
+    <div class="wrap wrap--narrow center">
+      <p class="eyebrow eyebrow--light">La maison</p>
+      <h2>Une table où l'on se sent bien</h2>
+      <p class="lead">Nous avons imaginé Orée comme une table où l'on se sent bien. Notre générosité se retrouve dans notre façon de recevoir et de cuisiner. Au fil des saisons, nous préparons chaque plat avec soin, pour le plaisir de bien manger.</p>
+      <p>Notre carte s'inspire de la forêt, des balades et des cueillettes. La cuisine est exigeante, l'expérience est détendue.</p>
+    </div>
+
+    <div class="wrap pillars">
+      <article>
+        <img class="pillar__ill" src="assets/img/ill-chanterelle.png" alt="">
+        <h3>Le produit &amp; la nature</h3>
+        <p>Le végétal, les saisons, la matière et le vivant comme inspirations. Des assiettes belles, lisibles et gourmandes.</p>
+      </article>
+      <article>
+        <img class="pillar__ill" src="assets/img/ill-leaves.png" alt="">
+        <h3>L'énergie &amp; la convivialité</h3>
+        <p>Un accueil attentif, avec le sourire et la simplicité. Une salle où l'on se sent immédiatement à sa place.</p>
+      </article>
+      <article>
+        <img class="pillar__ill" src="assets/img/ill-cep.png" alt="">
+        <h3>L'exigence &amp; la technique</h3>
+        <p>Une cuisine très précise qui reste généreuse et lisible. La technique s'efface derrière le plaisir.</p>
+      </article>
+    </div>
+
+    <div class="wrap gallery">
+      <figure class="ph ph--tall"><span>Photo · la salle</span></figure>
+      <figure class="ph"><span>Photo · détail liège / pierre</span></figure>
+      <figure class="ph"><span>Photo · tables en bois massif</span></figure>
+    </div>
+  </section>
+
+  <!-- LA CARTE -->
+  <section class="section section--nude" id="carte">
+    <div class="wrap wrap--narrow">
+      <div class="center">
+        <p class="eyebrow">La carte</p>
+        <h2>Au fil des saisons et des arrivages</h2>
+      </div>
+
+      <div class="plats">
+        <img class="photo" src="assets/img/plat1.jpg" alt="Assiette de la carte, sur porcelaine blanche" loading="lazy" width="1600" height="1200">
+        <img class="photo" src="assets/img/plat2.jpg" alt="Tartare et jeunes pousses de laitue sur assiette noire" loading="lazy" width="1600" height="1200">
+      </div>
+
+      <h3 class="menu__title">Nos formules</h3>
+      <ul class="formules">
+        <li>
+          <div class="row"><h4>Cimes</h4><span class="price">39 €</span></div>
+          <p class="note">Le midi</p>
+          <p>Chaque midi, notre équipe vous présente de vive voix le plat du jour, inspiré par la saison. Vous choisissez ensuite une entrée et un dessert à la carte.</p>
+        </li>
+        <li>
+          <div class="row"><h4>Hêtre</h4><span class="price">55 €</span></div>
+          <p class="note">Entrée, plat, dessert</p>
+          <p>Composez votre menu au gré de vos envies : une entrée, un plat et un dessert choisis à la carte.</p>
+        </li>
+        <li>
+          <div class="row"><h4>Lichen</h4><span class="price">79 €</span></div>
+          <p class="note">Le soir</p>
+          <p>Le soir, laissez-vous guider sur les sentiers d'un menu en cinq temps.</p>
+        </li>
+      </ul>
+
+      <div class="menu">
+        <div class="menu__col">
+          <h3 class="menu__title">Entrées</h3>
+          <ul class="dishes">
+            <li><div class="row"><h4>Omble chevalier maturé en cire d'abeille</h4><span class="price">15 €</span></div><p>Carotte marinée, cédrat et pollen</p></li>
+            <li><div class="row"><h4>Cèpe de nos montagnes fumé</h4><span class="price">15 €</span></div><p>Corne d'abondance, royale d'épicéa et bouillon de lard</p></li>
+          </ul>
+          <h3 class="menu__title">Desserts</h3>
+          <ul class="dishes">
+            <li><div class="row"><h4>Entremets au praliné de bourgeon de sapin</h4><span class="price">11 €</span></div><p>Poires confites, mousse légère à la vanille de Tahiti</p></li>
+            <li><div class="row"><h4>La noisette du Piémont dans tous ses états</h4><span class="price">11 €</span></div><p>Caramel praliné coulant, biscuit dacquoise et mousseline noisette</p></li>
+          </ul>
+        </div>
+        <div class="menu__col">
+          <h3 class="menu__title">Plats</h3>
+          <ul class="dishes">
+            <li><div class="row"><h4>Pressé d'aile de raie</h4><span class="price">33 €</span></div><p>Poireau au barbecue, giancale de la maison Baud et sauce safranée</p></li>
+            <li><div class="row"><h4>Canard colvert sauvage</h4><span class="price">33 €</span></div><p>Cuit sur le coffre, la cuisse confite, oignon brûlé et jus de canard</p></li>
+            <li><div class="row"><h4>Plat du jour</h4><span class="price">19 €</span></div><p>Une création à découvrir chaque jour auprès de notre équipe</p></li>
+          </ul>
+          <img class="menu__ill" src="assets/img/ill-branch.png" alt="" width="260">
+        </div>
+      </div>
+      <p class="center small"><a class="link" href="assets/menu_oree.pdf">Télécharger la carte (PDF)</a></p>
+    </div>
+  </section>
+
+  <!-- PRODUCTEURS -->
+  <section class="section section--terra" id="producteurs">
+    <div class="wrap wrap--narrow">
+      <div class="center">
+        <p class="eyebrow eyebrow--nude">Producteurs</p>
+        <h2>Ceux qui nourrissent notre cuisine</h2>
+      </div>
+      <dl class="producers">
+        <div><dt>Viande française</dt><dd>Maison Baud, Europeain, Masse, Miéral</dd></div>
+        <div><dt>Poisson</dt><dd>Criée, Du Léman à l'Océan</dd></div>
+        <div><dt>Légumes</dt><dd>Ferme du Pont d'Onnex, Ceux qui sèment, Vergers Saint-Eustache, Éric Roy, La brouette bleue</dd></div>
+        <div><dt>Lactose</dt><dd>Saprol, Ferme des Narcisses, Paccard</dd></div>
+        <div><dt>Économat</dt><dd>Le Carré des huiles, Safran de Salagine</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- LE LIEU -->
+  <section class="section section--nude" id="lieu">
+    <div class="wrap split split--center">
+      <img class="photo" src="assets/img/vue_ensemble.jpg" alt="Vue aérienne du restaurant Orée et de son jardin, dans le domaine de la Fondation" loading="lazy" width="1600" height="1199">
+      <div class="split__text">
+        <p class="eyebrow">Le lieu</p>
+        <h2>La Cour de l'Abbaye</h2>
+        <p>Orée a pris place dans le domaine de la Fondation d'Art Christian Réal, à Annecy-le-Vieux. Une cour pavée, des charpentes anciennes, des pierres apparentes&nbsp;: l'entrée d'un nouveau chapitre, à la lisière de l'abbaye.</p>
+      </div>
+    </div>
+    <div class="wrap lieu__terrasse">
+      <img src="assets/img/exterieur.jpg" alt="La terrasse d'Orée sous les arbres, dans les jardins de la Fondation" loading="lazy">
+    </div>
+  </section>
+
+  <!-- RESERVER / INFOS -->
+  <section class="section section--forest" id="reserver">
+    <div class="wrap wrap--narrow center">
+      <img class="sprig sprig--light" src="assets/img/ill-sprig.png" alt="" width="56">
+      <h2>Réserver une table</h2>
+      <p class="lead">Mardi au samedi · 12h00 – 21h30</p>
+      <p><a href="#" class="btn btn--big">Réserver en ligne</a></p>
+      <p class="small">ou par téléphone au <a class="link link--light" href="tel:+33450557890">04 50 55 78 90</a></p>
+
+      <div class="infos">
+        <div>
+          <h4>Adresse</h4>
+          <p>15 chemin de l'abbaye<br>74940 Annecy-le-Vieux</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p><a class="link link--light" href="mailto:oree@gmail.com">oree@gmail.com</a><br><a class="link link--light" href="tel:+33450557890">04 50 55 78 90</a></p>
+        </div>
+        <div>
+          <h4>Suivez-nous</h4>
+          <p><a class="link link--light" href="#">@oreeannecy</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <img src="assets/img/logo-nude.png" alt="Orée" width="90" height="31">
+  <p>© 2026 Orée · Annecy-le-Vieux · <a href="#">Mentions légales</a></p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
