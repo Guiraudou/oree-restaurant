@@ -90,6 +90,29 @@
 		});
 	}
 
-	window.addEventListener('scroll', onScroll, {passive: true});
+	// Parallaxe : la photo des bandeaux défile de haut en bas dans sa fenêtre
+	var bgs = Array.prototype.slice.call(document.querySelectorAll('.band__img'));
+
+	function parallax() {
+		var vh = window.innerHeight;
+		bgs.forEach(function (bg) {
+			var r = bg.parentNode.getBoundingClientRect();
+			if (r.bottom < 0 || r.top > vh) return;
+			var d = r.top + r.height / 2 - vh / 2;
+			bg.style.transform = 'translate3d(0,' + (-d * 0.25).toFixed(1) + 'px,0)';
+		});
+	}
+
+	var ticking = false;
+	window.addEventListener('scroll', function () {
+		onScroll();
+		if (reduceMotion || ticking) return;
+		ticking = true;
+		requestAnimationFrame(function () {
+			parallax();
+			ticking = false;
+		});
+	}, {passive: true});
 	onScroll();
+	if (!reduceMotion) parallax();
 })();
