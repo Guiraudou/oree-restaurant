@@ -1,3 +1,25 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+import {parsePhoneNumber} from 'libphonenumber-js/min';
+
+// Numéros de téléphone : affichage au format national à partir du format international (href="tel:+33…")
+document.querySelectorAll('[data-phone]').forEach(function (el) {
+	try {
+		el.textContent = parsePhoneNumber(el.getAttribute('data-phone')).formatNational();
+	} catch (e) {
+	}
+});
+
+// Identifiant Instagram (@…) déduit de l'URL du profil
+function getInstagramHandle(url) {
+	var path = new URL(url).pathname.replace(/\/+$/, '');
+	return '@' + path.split('/').pop();
+}
+
+document.querySelectorAll('[data-instagram]').forEach(function (el) {
+	el.textContent = getInstagramHandle(el.href);
+});
+
 (function () {
 	var SLIDE_DURATION = 6000;
 	var header = document.getElementById('header');

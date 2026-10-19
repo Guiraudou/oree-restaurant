@@ -18,13 +18,16 @@
 	--bs-body-font-family: var(--font-text);
 	--bs-body-color: var(--ink);
 	--bs-body-bg: var(--nude);
+	--bs-body-font-size: .875rem;
+	--bs-body-font-weight: 300;
 	--bs-body-line-height: 1.7;
 	--bs-border-radius: 0;
 }
 
 html { scroll-padding-top: 0; }
 a { color: inherit; }
-h1, h2, h3, h4 { font-family: var(--font-title); font-weight: 700; }
+h1, h2, h3, h4 { font-family: var(--font-title); font-weight: 400; }
+.lead { font-size: 1.05rem; font-weight: 300; }
 h2 { font-size: clamp(2rem, 4.4vw, 3.2rem); }
 h3 { font-size: 1.4rem; }
 h4 { font-weight: 400; font-size: 1.1rem; margin: 0; }
@@ -59,6 +62,9 @@ h4 { font-weight: 400; font-size: 1.1rem; margin: 0; }
 	letter-spacing: .16em;
 }
 .btn-oree.btn-sm { --bs-btn-padding-x: 1.4em; --bs-btn-padding-y: .6em; --bs-btn-font-size: .72rem; }
+.btn-oree--dark { --bs-btn-color: var(--terracotta); --bs-btn-border-color: var(--terracotta); --bs-btn-hover-color: var(--nude); --bs-btn-hover-bg: var(--terracotta); --bs-btn-hover-border-color: var(--terracotta); --bs-btn-active-color: var(--nude); --bs-btn-active-bg: var(--terracotta); --bs-btn-active-border-color: var(--terracotta); }
+.modal-oree .modal-content { background: var(--nude); color: var(--ink); padding: .5rem 1rem 1rem; }
+.modal-oree .modal-title { font-size: clamp(1.5rem, 3vw, 2rem); }
 .btn-oree--big { --bs-btn-padding-x: 2.6em; --bs-btn-padding-y: 1em; --bs-btn-bg: var(--nude); --bs-btn-color: var(--forest); --bs-btn-hover-bg: transparent; --bs-btn-hover-color: var(--nude); }
 
 /* Header */
@@ -108,6 +114,11 @@ h4 { font-weight: 400; font-size: 1.1rem; margin: 0; }
    Si le contenu dépasse la hauteur d'écran (petits écrans), la section grandit et se scrolle normalement. */
 html { scroll-snap-type: y mandatory; }
 .hero, .panel, #reserver { scroll-snap-align: start; }
+.site-footer { scroll-snap-align: end; }
+
+/* Lien Instagram ancré en bas à gauche sur toutes les pages */
+.instagram-fixed { position: fixed; z-index: 1030; left: 1.25rem; bottom: 1.25rem; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: var(--forest-deep); color: var(--nude); border: 1px solid rgba(241, 227, 200, .4); transition: background .2s, color .2s; }
+.instagram-fixed:hover { background: var(--nude); color: var(--forest-deep); }
 .panel { background: var(--panel-bg); }
 .panel--nude { --panel-bg: var(--nude); }
 .panel--forest { --panel-bg: var(--forest); color: var(--nude); }
@@ -126,26 +137,22 @@ html { scroll-snap-type: y mandatory; }
 /* Cadre à deux photos : fondu de l'une à l'autre en boucle */
 .panel__frame--swap img + img { opacity: 0; animation: kenburns 16s ease-in-out infinite alternate, swap 12s ease-in-out infinite; }
 @keyframes swap { 0%, 40% { opacity: 0; } 50%, 90% { opacity: 1; } 100% { opacity: 0; } }
-.panel .pillar__ill { height: 64px; }
-.sprig--light { filter: invert(1) sepia(.35) brightness(1.05); }
-
-/* Piliers */
-.pillar__ill { height: 110px; width: auto; filter: invert(1) sepia(.35) brightness(1.05); }
-article p { font-size: .95rem; }
+/* Picto du contact : teinté en nude (masque) */
+.sprig--nude { width: 56px; height: 56px; background-color: var(--nude); -webkit-mask: url("../assets/img/ill-sprig.png") center / contain no-repeat; mask: url("../assets/img/ill-sprig.png") center / contain no-repeat; }
 
 /* Carte */
 .panel h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); }
 /* Jour (aligné à droite) : Midi/Soir (aligné à gauche), les « : » sont alignés au centre */
-.horaires li span:first-child { font-weight: 700; }
+.horaires li span:first-child { font-weight: 500; }
 .horaires li span:last-child { text-align: left; }
 .horaires li { display: grid; grid-template-columns: 1fr auto 1fr; column-gap: .6rem; line-height: 1.5; }
 .formule { height: 100%; padding: 1.25rem 1.5rem; background: rgba(255, 255, 255, .4); }
 .formules h4 { font-size: 1.25rem; }
-.formules p { margin: .2rem 0 0; font-size: .85rem; line-height: 1.5; }
+.formules p { margin: .2rem 0 0; font-size: .78rem; line-height: 1.5; }
 .formules .note { font-size: .7rem; letter-spacing: .15em; margin: .1rem 0 .4rem; }
 .dishes li { margin-bottom: 1.5rem; }
 .dishes h4 { font-size: 1rem; }
-.dishes p { margin: .1rem 0 0; font-size: .82rem; line-height: 1.45; opacity: .8; }
+.dishes p { margin: .1rem 0 0; font-size: .75rem; line-height: 1.45; opacity: .8; }
 
 @media (max-width: 767.98px) {
 	.header .navbar-collapse { background: var(--forest); padding: 1rem 1.5rem 1.5rem; margin: 0 -1rem; }
