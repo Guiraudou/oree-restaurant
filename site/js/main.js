@@ -17,7 +17,7 @@ function getInstagramHandle(url) {
 }
 
 document.querySelectorAll('[data-instagram]').forEach(function (el) {
-	el.textContent = getInstagramHandle(el.href);
+	el.textContent = getInstagramHandle(el.closest('a').href);
 });
 
 (function () {

@@ -6,7 +6,7 @@
 </footer>
 
 <a href="<?= INSTAGRAM_URL ?>" class="instagram-fixed" target="_blank" rel="noopener" aria-label="Instagram <?= SITE_NAME ?>">
-	<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg>
+	<svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg>
 </a>
 
 <script src="dist/app.js?<?= ASSET_TOKEN ?>"></script>

@@ -13,21 +13,21 @@ $meta_description = 'Orée, table gastronomique à Annecy, dans le domaine de la
 				<img class="slide__photo" src="assets/img/vue_ensemble.jpg" alt="">
 			</div>
 			<div class="slide slide--2" data-src="" data-label="La terrasse">
-				<img class="slide__photo" src="assets/img/exterieur.jpg" alt="">
+				<img class="slide__photo" src="assets/img/exterieur2.jpg" alt="">
 			</div>
-			<div class="slide slide--3" data-src="" data-label="L’assiette">
+			<!--<div class="slide slide--3" data-src="" data-label="L’assiette">
 				<img class="slide__photo" src="assets/img/plat1.jpg" alt="">
 			</div>
 			<div class="slide slide--4" data-src="" data-label="Le tartare">
 				<img class="slide__photo" src="assets/img/plat2.jpg" alt="">
-			</div>
+			</div>-->
 		</div>
 		<div class="hero__shade"></div>
 
 		<div class="position-relative z-2 px-4">
-			<img class="hero__logo d-block mx-auto mb-4" src="assets/img/logo-nude.png" alt="<?= SITE_NAME ?>" width="420" height="143">
-			<p class="hero__tagline fw-light mb-4">Une cuisine exigeante de haute précision,<br>servie avec la simplicité d’une maison qui aime recevoir.</p>
-			<a href="#reserver" class="btn btn-oree">Réserver une table</a>
+			<img class="hero__logo d-block mx-auto mb-5" src="assets/img/logo-nude.png" alt="<?= SITE_NAME ?>" width="420" height="143">
+			<!--<p class="hero__tagline fw-light mb-4">Une cuisine exigeante de haute précision,<br>servie avec la simplicité d’une maison qui aime recevoir.</p>-->
+			<a href="<?= BOOKING_URL ?>" class="btn btn-oree mt-5" target="_blank" rel="noopener">Réserver une table</a>
 		</div>
 
 		<div class="hero__dots" id="dots" role="tablist" aria-label="Diaporama"></div>
@@ -38,7 +38,7 @@ $meta_description = 'Orée, table gastronomique à Annecy, dans le domaine de la
 	<section class="panel panel--forest panel--left" id="lieu">
 		<div class="panel__stage">
 			<figure class="panel__photo">
-				<div class="panel__frame panel__frame--swap"><img src="assets/img/exterieur.jpg" alt="La terrasse d’Orée sous les arbres, dans les jardins de la Fondation" loading="lazy"><img src="assets/img/vue_ensemble.jpg" alt="Vue aérienne du restaurant Orée et de son jardin, dans le domaine de la Fondation" loading="lazy"></div>
+				<div class="panel__frame panel__frame--swap"><img src="assets/img/exterieur2.jpg" alt="La terrasse d’Orée sous les arbres, dans les jardins de la Fondation" loading="lazy"><img src="assets/img/vue_ensemble.jpg" alt="Vue aérienne du restaurant Orée et de son jardin, dans le domaine de la Fondation" loading="lazy"></div>
 			</figure>
 			<div class="panel__text">
 				<div class="panel__inner">
@@ -55,9 +55,9 @@ $meta_description = 'Orée, table gastronomique à Annecy, dans le domaine de la
 	<section class="panel panel--nude panel--right" id="carte">
 		<div class="panel__stage">
 			<figure class="panel__photo">
-				<div class="panel__frame panel__frame--swap">
-					<img src="assets/img/plat1.jpg" alt="Assiette de la carte, sur porcelaine blanche" loading="lazy">
-					<img src="assets/img/plat2.jpg" alt="Tartare et jeunes pousses de laitue sur assiette noire" loading="lazy">
+				<div class="panel__frame panel__frame--color panel__frame--ocre"><!-- Photos provisoirement retirées (shooting prévu début novembre) -->
+					<!--<img src="assets/img/plat1.jpg" alt="Assiette de la carte, sur porcelaine blanche" loading="lazy">
+					<img src="assets/img/plat2.jpg" alt="Tartare et jeunes pousses de laitue sur assiette noire" loading="lazy">-->
 				</div>
 			</figure>
 			<div class="panel__text">
@@ -100,7 +100,8 @@ $meta_description = 'Orée, table gastronomique à Annecy, dans le domaine de la
 	<section class="panel panel--terra panel--left" id="equipe">
 		<div class="panel__stage">
 			<figure class="panel__photo">
-				<div class="panel__frame"><img src="assets/img/julien.jpg" alt="Le chef Julien Guiraudou, derrière le comptoir d’Orée" loading="lazy" style="object-position: 35% center"></div>
+				<!-- Photo provisoirement retirée (shooting prévu début novembre) -->
+				<div class="panel__frame panel__frame--color panel__frame--forest"><!--<img src="assets/img/julien.jpg" alt="Le chef Julien Guiraudou, derrière le comptoir d’Orée" loading="lazy" style="object-position: 35% center">--></div>
 			</figure>
 			<div class="panel__text">
 				<div class="panel__inner">
@@ -130,7 +131,7 @@ $meta_description = 'Orée, table gastronomique à Annecy, dans le domaine de la
 						<li><span class="text-end">Jeudi</span><span>:</span><span>Midi et Soir</span></li>
 						<li><span class="text-end">Vendredi</span><span>:</span><span>Midi et Soir</span></li>
 					</ul>
-					<p class="mb-4"><a href="<?= BOOKING_URL ?>" class="btn btn-oree btn-oree--big">Réserver en ligne</a></p>
+					<p class="mb-4"><a href="<?= BOOKING_URL ?>" class="btn btn-oree btn-oree--big" target="_blank" rel="noopener">Réserver en ligne</a></p>
 					<p class="small mb-0">ou par téléphone au <a class="link link--light" href="tel:<?= PHONE ?>" data-phone="<?= PHONE ?>"><?= PHONE ?></a></p>
 
 					<div class="row g-4 mt-5 pt-5 border-top border-light border-opacity-25">
@@ -140,11 +141,12 @@ $meta_description = 'Orée, table gastronomique à Annecy, dans le domaine de la
 						</div>
 						<div class="col-md-4">
 							<h4 class="fw-normal text-matcha mb-2">Contact</h4>
-							<p class="small mb-0"><a class="link link--light" href="mailto:<?= EMAIL ?>"><?= EMAIL ?></a><br><a class="link link--light" href="tel:<?= PHONE ?>" data-phone="<?= PHONE ?>"><?= PHONE ?></a></p>
+							<p class="small mb-0"><a class="link link--light" href="mailto:<?= EMAIL ?>"><?= EMAIL ?></a><br><a class="link link--light d-inline-block mt-2" href="tel:<?= PHONE ?>" data-phone="<?= PHONE ?>"><?= PHONE ?></a></p>
 						</div>
 						<div class="col-md-4">
 							<h4 class="fw-normal text-matcha mb-2">Suivez-nous</h4>
-							<p class="small mb-0"><a class="link link--light" href="<?= INSTAGRAM_URL ?>" target="_blank" rel="noopener" data-instagram><?= INSTAGRAM_URL ?></a></p>
+							<p class="small mb-1"><a class="link link--light d-inline-flex align-items-center gap-2" href="<?= INSTAGRAM_URL ?>" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span data-instagram><?= INSTAGRAM_URL ?></span></a></p>
+							<p class="small mb-0"><a class="link link--light d-inline-flex align-items-center gap-2" href="<?= FACEBOOK_URL ?>" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21h3z"/></svg><span>Facebook</span></a></p>
 						</div>
 					</div>
 				</div>

@@ -30,9 +30,9 @@
 				<a class="nav-link" href="#equipe">Derrière Orée</a>
 				<a class="nav-link" href="#reserver">Contact</a>
 			</nav>
-			<div class="d-flex gap-2">
+			<div class="d-flex gap-3">
 				<button type="button" class="btn btn-oree btn-sm" data-bs-toggle="modal" data-bs-target="#modalOffrir">Offrir</button>
-				<a href="#reserver" class="btn btn-oree btn-sm">Réserver</a>
+				<a href="<?= BOOKING_URL ?>" class="btn btn-oree btn-sm" target="_blank" rel="noopener">Réserver</a>
 			</div>
 		</div>
 	</div>
