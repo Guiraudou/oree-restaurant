@@ -154,6 +154,24 @@ $meta_description = 'Orée, table gastronomique à Annecy, dans le domaine de la
 		</div>
 	</section>
 
+	<!-- MODAL OUVERTURE (s'ouvre au chargement de la page) -->
+	<div class="modal fade modal-oree" id="modalOuverture" tabindex="-1" aria-labelledby="modalOuvertureLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content text-center">
+				<div class="modal-header border-0 pb-0 justify-content-end">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+				</div>
+				<div class="modal-body pt-0 px-md-4 pb-4">
+					<img class="encart__logo d-block mx-auto mb-4" src="assets/img/logo-noir.png" alt="<?= SITE_NAME ?>" width="240" height="82">
+					<p class="eyebrow text-uppercase text-terracotta mb-3" id="modalOuvertureLabel">Ouverture le 9 novembre 2026</p>
+					<p class="lead mb-3">Orée est une table gastronomique au sein de l’Abbaye à Annecy.</p>
+					<p class="mb-0">Une cuisine précise et sincère, au fil des saisons, servie avec la simplicité d’une maison qui aime recevoir.</p>
+					<p>Nous vous ouvrons nos portes le <strong class="fw-medium">9 novembre 2026</strong>.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- MODAL OFFRIR -->
 	<div class="modal fade modal-oree" id="modalOffrir" tabindex="-1" aria-labelledby="modalOffrirLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">

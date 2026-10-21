@@ -1,6 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap';
+import {Modal} from 'bootstrap';
 import {parsePhoneNumber} from 'libphonenumber-js/min';
+
+// Popup d'annonce de l'ouverture : affichée au chargement, une seule fois par session
+(function () {
+	var el = document.getElementById('modalOuverture');
+	if (!el) return;
+	try {
+		if (sessionStorage.getItem('oree-ouverture-vue')) return;
+		sessionStorage.setItem('oree-ouverture-vue', '1');
+	} catch (e) {
+	}
+	Modal.getOrCreateInstance(el).show();
+})();
 
 // Numéros de téléphone : affichage au format national à partir du format international (href="tel:+33…")
 document.querySelectorAll('[data-phone]').forEach(function (el) {

@@ -109,6 +109,7 @@ h4 { font-weight: 400; font-size: 1.1rem; margin: 0; }
 .section--nude { background: var(--nude); }
 .section--forest { background: var(--forest); color: var(--nude); }
 .section--terra { background: var(--terracotta); color: var(--nude); }
+.encart__logo { width: min(240px, 60vw); height: auto; }
 
 /* Une section = un écran. Le scroll "accroche" chaque section (scroll-snap) : elle s'affiche en entier.
    Si le contenu dépasse la hauteur d'écran (petits écrans), la section grandit et se scrolle normalement. */
