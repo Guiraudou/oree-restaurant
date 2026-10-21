@@ -4,6 +4,7 @@ import {parsePhoneNumber} from 'libphonenumber-js/min';
 
 // Popup d'annonce de l'ouverture : affichée au chargement, une seule fois par session
 (function () {
+	return;
 	var el = document.getElementById('modalOuverture');
 	if (!el) return;
 	try {
