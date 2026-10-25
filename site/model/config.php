@@ -16,6 +16,10 @@ define('PHONE', '+33450525563');
 define('ADDRESS_LINE_1', '15 chemin de l’Abbaye');
 define('ADDRESS_LINE_2', '74940 Annecy');
 
+// Société
+define('COMPANY_SIRET', '10997834600012');
+define('COMPANY_VAT_NUMBER', 'FR26109978346');
+
 // Réseaux sociaux
 define('INSTAGRAM_URL', 'https://www.instagram.com/oree_restaurant/');
 define('FACEBOOK_URL', 'https://www.facebook.com/profile.php?id=61595701282972');

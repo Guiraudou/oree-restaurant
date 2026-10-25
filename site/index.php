@@ -3,7 +3,7 @@
 $meta_title = 'Orée — Restaurant à Annecy · Cour de l’Abbaye';
 $meta_description = 'Orée, table gastronomique à Annecy, dans le domaine de la Fondation d’Art Christian Réal – La Cour de l’Abbaye. Une cuisine exigeante de haute précision, servie avec la simplicité d’une maison qui aime recevoir.';
 ?>
-<?php require_once 'header.php'; ?>
+<?php require_once 'header.inc.php'; ?>
 
 	<!-- HERO : carrousel de vidéos très courtes -->
 	<section class="hero position-relative overflow-hidden vh-100 d-flex align-items-center justify-content-center text-center" id="accueil">
@@ -154,42 +154,6 @@ $meta_description = 'Orée, table gastronomique à Annecy, dans le domaine de la
 		</div>
 	</section>
 
-	<!-- MODAL OUVERTURE (s'ouvre au chargement de la page) -->
-	<div class="modal fade modal-oree" id="modalOuverture" tabindex="-1" aria-labelledby="modalOuvertureLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content text-center">
-				<div class="modal-header border-0 pb-0 justify-content-end">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
-				</div>
-				<div class="modal-body pt-0 px-md-4 pb-4">
-					<img class="encart__logo d-block mx-auto mb-4" src="assets/img/logo-noir.png" alt="<?= SITE_NAME ?>" width="240" height="82">
-					<p class="eyebrow text-uppercase text-terracotta mb-3" id="modalOuvertureLabel">Ouverture le 9 novembre 2026</p>
-					<p class="lead mb-3">Orée est une table gastronomique au sein de l’Abbaye à Annecy.</p>
-					<p class="mb-0">Une cuisine précise et sincère, au fil des saisons, servie avec la simplicité d’une maison qui aime recevoir.</p>
-					<p>Nous vous ouvrons nos portes le <strong class="fw-medium">9 novembre 2026</strong>.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+	<?php require_once 'modal.inc.php'; ?>
 
-	<!-- MODAL OFFRIR -->
-	<div class="modal fade modal-oree" id="modalOffrir" tabindex="-1" aria-labelledby="modalOffrirLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-header border-0 pb-0">
-					<p class="eyebrow text-uppercase text-terracotta mb-0">Offrir</p>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
-				</div>
-				<div class="modal-body">
-					<h2 class="modal-title mb-3" id="modalOffrirLabel">Offrir un moment chez Orée</h2>
-					<p class="lead">Envie de faire plaisir à vos proches ?</p>
-					<p>Offrez-leur une expérience gourmande chez Orée, à travers un bon cadeau personnalisé.</p>
-					<p>Pour créer votre bon cadeau sur mesure, contactez-nous directement par téléphone ou par e-mail. Nous serons ravis de vous accompagner dans votre choix.</p>
-					<p class="mb-1">Par téléphone : <a class="link" href="tel:<?= PHONE ?>" data-phone="<?= PHONE ?>"><?= PHONE ?></a></p>
-					<p class="mb-0">Par e-mail : <a class="link" href="mailto:<?= EMAIL ?>"><?= EMAIL ?></a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-<?php require_once 'footer.php'; ?>
+<?php require_once 'footer.inc.php'; ?>
