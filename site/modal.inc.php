@@ -46,7 +46,7 @@
 
 				<h3 class="fs-5 text-terracotta">Éditeur du site</h3>
 				<p class="small">
-					<?= SITE_NAME ?> — [forme juridique, ex. SAS / SARL] au capital de [montant] €<br>
+					<?= SITE_NAME ?> — SAS au capital de 10.000 €<br>
 					Siège social : <?= ADDRESS_LINE_1 ?>, <?= ADDRESS_LINE_2 ?><br>
 					SIRET <?= COMPANY_SIRET ?> — TVA intracommunautaire <?= COMPANY_VAT_NUMBER ?><br>
 					Téléphone : <a class="link" href="tel:<?= PHONE ?>" data-phone="<?= PHONE ?>"><?= PHONE ?></a><br>
@@ -54,13 +54,13 @@
 				</p>
 
 				<h3 class="fs-5 text-terracotta">Directeur de la publication</h3>
-				<p class="small">[Prénom Nom], en qualité de [fonction].</p>
+				<p class="small">Chloé Reveillere, en qualité de Présidente.</p>
 
 				<h3 class="fs-5 text-terracotta">Hébergement</h3>
 				<p class="small">
-					OVHcloud<br>
+					OVH<br>
 					2 rue Kellermann, 59100 Roubaix, France<br>
-					Téléphone : +33 9 72 10 10 07
+					Contact : www.ovhcloud.com/fr/contact
 				</p>
 
 				<h3 class="fs-5 text-terracotta">Propriété intellectuelle</h3>
