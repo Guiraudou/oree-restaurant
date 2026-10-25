@@ -17,6 +17,8 @@ define('ADDRESS_LINE_1', '15 chemin de l’Abbaye');
 define('ADDRESS_LINE_2', '74940 Annecy');
 
 // Société
+define('COMPANY_LEGAL_FORM', 'SAS');
+define('COMPANY_CAPITAL', 10000); // en euros
 define('COMPANY_SIRET', '10997834600012');
 define('COMPANY_VAT_NUMBER', 'FR26109978346');
 

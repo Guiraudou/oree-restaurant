@@ -46,9 +46,9 @@
 
 				<h3 class="fs-5 text-terracotta">Éditeur du site</h3>
 				<p class="small">
-					<?= SITE_NAME ?> — SAS au capital de 10.000 €<br>
+					<?= SITE_NAME ?> — <?= COMPANY_LEGAL_FORM ?> au capital de <span data-capital="<?= COMPANY_CAPITAL ?>"><?= number_format(COMPANY_CAPITAL, 0, ',', ' ') ?> €</span><br>
 					Siège social : <?= ADDRESS_LINE_1 ?>, <?= ADDRESS_LINE_2 ?><br>
-					SIRET <?= COMPANY_SIRET ?> — TVA intracommunautaire <?= COMPANY_VAT_NUMBER ?><br>
+					SIRET : <span data-siret="<?= COMPANY_SIRET ?>"><?= COMPANY_SIRET ?></span> — TVA intracommunautaire : <?= COMPANY_VAT_NUMBER ?><br>
 					Téléphone : <a class="link" href="tel:<?= PHONE ?>" data-phone="<?= PHONE ?>"><?= PHONE ?></a><br>
 					E-mail : <a class="link" href="mailto:<?= EMAIL ?>"><?= EMAIL ?></a>
 				</p>
