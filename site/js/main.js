@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Modal} from 'bootstrap';
-import {TelephoneNumber} from '@osimatic/core-js/contact_details.js';
-import {SocialNetwork} from '@osimatic/core-js/social_network.js';
-import {Organization} from '@osimatic/core-js/organization.js';
-import {Currency} from '@osimatic/core-js/number.js';
+import {TelephoneNumber} from '@osimatic/core-js/contact/TelephoneNumber.js';
+import {SocialNetwork} from '@osimatic/core-js/network/SocialNetwork.js';
+import {Organization} from '@osimatic/core-js/organization/Organization.js';
+import {Currency} from '@osimatic/core-js/number/Currency.js';
 
 // Popup d'annonce de l'ouverture : affichée au chargement, une seule fois par session
 (function () {
