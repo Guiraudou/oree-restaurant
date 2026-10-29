@@ -8,7 +8,7 @@ define('ASSET_TOKEN', strtotime('2026-10-19 12:45:00'));
 
 // Informations du site
 define('SITE_NAME', 'Orée');
-define('SITE_URL', 'https://oree-restaurant.com');
+define('SITE_URL', 'https://www.oree-restaurant.com');
 
 // Contact
 define('EMAIL', 'contact@oree-restaurant.com');
