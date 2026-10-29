@@ -1,6 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Modal} from 'bootstrap';
-import {parsePhoneNumber} from 'libphonenumber-js/min';
+import {TelephoneNumber} from '@osimatic/core-js/contact/TelephoneNumber.js';
+import {SocialNetwork} from '@osimatic/core-js/network/SocialNetwork.js';
+import {Organization} from '@osimatic/core-js/organization/Organization.js';
+import {Currency} from '@osimatic/core-js/number/Currency.js';
 
 // Popup d'annonce de l'ouverture : affichée au chargement, une seule fois par session
 (function () {
@@ -16,21 +19,25 @@ import {parsePhoneNumber} from 'libphonenumber-js/min';
 })();
 
 // Numéros de téléphone : affichage au format national à partir du format international (href="tel:+33…")
+// Pays par défaut requis par core-js (sans lui, formatNational échoue sur toUpperCase et renvoie une chaîne vide)
+TelephoneNumber.setLocalCountryCode('FR');
 document.querySelectorAll('[data-phone]').forEach(function (el) {
-	try {
-		el.textContent = parsePhoneNumber(el.getAttribute('data-phone')).formatNational();
-	} catch (e) {
-	}
+	el.textContent = TelephoneNumber.formatNational(el.getAttribute('data-phone'));
+});
+
+// SIRET : affichage groupé (ex. "109 978 346 00012")
+document.querySelectorAll('[data-siret]').forEach(function (el) {
+	el.textContent = Organization.formatFranceSiret(el.getAttribute('data-siret'));
+});
+
+// Capital social : affichage monétaire (ex. "10 000 €")
+document.querySelectorAll('[data-capital]').forEach(function (el) {
+	el.textContent = Currency.format(Number(el.getAttribute('data-capital')), 0);
 });
 
 // Identifiant Instagram (@…) déduit de l'URL du profil
-function getInstagramHandle(url) {
-	var path = new URL(url).pathname.replace(/\/+$/, '');
-	return '@' + path.split('/').pop();
-}
-
 document.querySelectorAll('[data-instagram]').forEach(function (el) {
-	el.textContent = getInstagramHandle(el.closest('a').href);
+	el.textContent = SocialNetwork.getInstagramHandle(el.closest('a').href);
 });
 
 (function () {

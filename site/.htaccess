@@ -1,4 +1,4 @@
 RewriteEngine On
 
-RewriteCond %{HTTP_HOST} ^xn--ore-restaurant-ckb\.com$ [NC]
-RewriteRule ^ https://www.xn--ore-restaurant-ckb.com%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTP_HOST} ^oree-restaurant\.com$ [NC]
+RewriteRule ^ https://www.oree-restaurant.com%{REQUEST_URI} [R=301,L]

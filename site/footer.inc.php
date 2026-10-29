@@ -2,7 +2,7 @@
 
 <footer class="site-footer bg-forest-deep text-nude small text-center py-4 px-3">
 	<img class="d-block mx-auto mb-2" src="assets/img/logo-nude.png" alt="<?= SITE_NAME ?>" width="90" height="31">
-	<p class="mb-0 opacity-75">© <?= date('Y') ?> <?= SITE_NAME ?> · Annecy · <a href="#">Mentions légales</a></p>
+	<p class="mb-0 opacity-75">© <?= date('Y') ?> <?= SITE_NAME ?> · Annecy · <a href="#" data-bs-toggle="modal" data-bs-target="#modalMentionsLegales">Mentions légales</a></p>
 </footer>
 
 <a href="<?= INSTAGRAM_URL ?>" class="instagram-fixed" target="_blank" rel="noopener" aria-label="Instagram <?= SITE_NAME ?>">
