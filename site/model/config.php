@@ -24,7 +24,7 @@ define('FACEBOOK_URL', 'https://www.facebook.com/profile.php?id=61595701282972')
 define('BOOKING_URL', 'https://bookings.zenchef.com/results?rid=388055&pid=1001');
 
 // Carte (PDF)
-define('MENU_PDF', 'assets/menu_oree.pdf');
+define('MENU_PDF', 'assets/carte/menu_oree.pdf');
 
 // Autres paramètres
 define('TIMEZONE', 'Europe/Paris');

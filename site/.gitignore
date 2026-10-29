@@ -1,3 +1,5 @@
 
 node_modules/
 dist/
+assets/carte/archives/
+secret.ini
