@@ -36,8 +36,8 @@ final class MenuService
 	public function __construct()
 	{
 		$siteRoot = dirname(__DIR__, 2);
-		$this->menuPath = $siteRoot . '/assets/carte/menu_oree.pdf';
-		$this->archiveDirectory = $siteRoot . '/assets/carte/archives';
+		$this->menuPath = $siteRoot . '/data/carte/menu_oree.pdf';
+		$this->archiveDirectory = $siteRoot . '/data/carte/archives';
 	}
 
 	// ========================================

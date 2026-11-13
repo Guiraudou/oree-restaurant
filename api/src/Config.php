@@ -50,7 +50,7 @@ final class Config
 	 */
 	public function getDataDirectory(): string
 	{
-		return $this->siteRoot . DIRECTORY_SEPARATOR . 'api' . DIRECTORY_SEPARATOR . 'data';
+		return $this->siteRoot . DIRECTORY_SEPARATOR . 'data';
 	}
 
 	/**

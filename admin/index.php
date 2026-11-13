@@ -30,7 +30,7 @@ require_once __DIR__ . '/../inc/config.php';
 
 	<section id="menuSection" class="mb-5">
 		<h2 class="h5 mb-3">Carte (PDF)</h2>
-		<iframe id="menuPreview" src="../assets/carte/menu_oree.pdf?<?= time() ?>" title="Carte actuelle" class="w-100 mt-3 border" style="height: 70vh;"></iframe>
+		<iframe id="menuPreview" src="../data/carte/menu_oree.pdf?<?= time() ?>" title="Carte actuelle" class="w-100 mt-3 border" style="height: 70vh;"></iframe>
 		<button type="button" class="btn btn-oree btn-oree--dark" data-bs-toggle="modal" data-bs-target="#menuModal">Modifier le PDF</button>
 	</section>
 </main>

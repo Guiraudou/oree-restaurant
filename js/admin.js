@@ -83,7 +83,7 @@ menuForm.addEventListener('submit', async (event) => {
 		Modal.getOrCreateInstance(document.getElementById('menuModal')).hide();
 		FlashMessage.displaySuccess('La nouvelle carte est publiée.');
 		// Reload the preview with a new query string, so that the browser does not show the previous PDF from its cache
-		document.getElementById('menuPreview').src = `../assets/carte/menu_oree.pdf?${Date.now()}`;
+		document.getElementById('menuPreview').src = `../data/carte/menu_oree.pdf?${Date.now()}`;
 		return;
 	}
 	FormHelper.hideFormErrors(menuForm.closest('.modal'));

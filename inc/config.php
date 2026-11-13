@@ -4,7 +4,7 @@
  * Configuration du site Orée
  */
 
-define('ASSET_TOKEN', strtotime('2026-11-13 08:36:00'));
+define('ASSET_TOKEN', strtotime('2026-11-13 20:41:00'));
 
 // Informations du site
 define('SITE_NAME', 'Orée');
@@ -30,7 +30,7 @@ define('FACEBOOK_URL', 'https://www.facebook.com/profile.php?id=61595701282972')
 define('BOOKING_URL', 'https://bookings.zenchef.com/results?rid=388055&pid=1001');
 
 // Carte (PDF)
-define('MENU_PDF', 'assets/carte/menu_oree.pdf');
+define('MENU_PDF', 'data/carte/menu_oree.pdf');
 
 // Autres paramètres
 define('TIMEZONE', 'Europe/Paris');
