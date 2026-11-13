@@ -138,9 +138,13 @@ html { scroll-snap-type: y mandatory; }
 /* Cadre uni en attendant les photos */
 .panel__frame--ocre { background: var(--ocre); }
 .panel__frame--forest { background: var(--forest-deep); }
-/* Cadre à deux photos : fondu de l'une à l'autre en boucle */
-.panel__frame--swap img + img { opacity: 0; animation: kenburns 16s ease-in-out infinite alternate, swap 12s ease-in-out infinite; }
-@keyframes swap { 0%, 40% { opacity: 0; } 50%, 90% { opacity: 1; } 100% { opacity: 0; } }
+/* Cadre de photos en fondu en boucle, sans limite de nombre.
+   Sur .panel__frame--swap : style="--n:N" (nombre de photos). Sur chaque img : style="--i:R" (rang, à partir de 0).
+   Chaque photo occupe un créneau de 4 s, la boucle dure N × 4 s. */
+.panel__frame--swap img { opacity: 0; animation: kenburns 16s ease-in-out infinite alternate, swap calc(var(--n) * 4s) ease-in-out infinite calc(var(--i) * -4s); }
+.panel__frame--swap img:first-child { opacity: 1; }
+.panel__frame--swap img:only-child { animation: kenburns 16s ease-in-out infinite alternate; }
+@keyframes swap { 0% { opacity: 0; } 10%, 50% { opacity: 1; } 60%, 100% { opacity: 0; } }
 /* Picto du contact : teinté en nude (masque) */
 .sprig--nude { width: 56px; height: 56px; background-color: var(--nude); -webkit-mask: url("../assets/img/ill-sprig.png") center / contain no-repeat; mask: url("../assets/img/ill-sprig.png") center / contain no-repeat; }
 

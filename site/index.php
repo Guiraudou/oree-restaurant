@@ -38,7 +38,11 @@ $meta_description = 'Orée, table gastronomique à Annecy, dans le domaine de la
 	<section class="panel panel--forest panel--left" id="lieu">
 		<div class="panel__stage">
 			<figure class="panel__photo">
-				<div class="panel__frame panel__frame--swap"><img src="assets/img/exterieur2.jpg" alt="La terrasse d’Orée sous les arbres, dans les jardins de la Fondation" loading="lazy"><img src="assets/img/vue_ensemble.jpg" alt="Vue aérienne du restaurant Orée et de son jardin, dans le domaine de la Fondation" loading="lazy"></div>
+				<div class="panel__frame panel__frame--swap" style="--n:3">
+					<img src="assets/img/exterieur2.jpg" style="--i:0" alt="La terrasse d’Orée sous les arbres, dans les jardins de la Fondation" loading="lazy">
+					<img src="assets/img/vue_ensemble.jpg" style="--i:1" alt="Vue aérienne du restaurant Orée et de son jardin, dans le domaine de la Fondation" loading="lazy">
+					<img src="assets/img/facade-oree.jpg" style="--i:2" alt="Façade du restaurant Orée, enseigne lumineuse et sculptures en acier sur la pelouse" loading="lazy">
+				</div>
 			</figure>
 			<div class="panel__text">
 				<div class="panel__inner">

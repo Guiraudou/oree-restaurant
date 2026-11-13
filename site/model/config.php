@@ -4,7 +4,7 @@
  * Configuration du site Orée
  */
 
-define('ASSET_TOKEN', strtotime('2026-10-19 12:45:00'));
+define('ASSET_TOKEN', strtotime('2026-11-13 08:36:00'));
 
 // Informations du site
 define('SITE_NAME', 'Orée');
