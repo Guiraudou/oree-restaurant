@@ -1,9 +1,9 @@
-<?php require_once 'model/config.php'; ?>
+<?php require_once 'inc/config.php'; ?>
 <?php
 $meta_title = 'Orée — Restaurant à Annecy · Cour de l’Abbaye';
 $meta_description = 'Orée, table gastronomique à Annecy, dans le domaine de la Fondation d’Art Christian Réal – La Cour de l’Abbaye. Une cuisine exigeante de haute précision, servie avec la simplicité d’une maison qui aime recevoir.';
 ?>
-<?php require_once 'header.inc.php'; ?>
+<?php require_once 'inc/header.inc.php'; ?>
 
 	<!-- HERO : carrousel de vidéos très courtes -->
 	<section class="hero position-relative overflow-hidden vh-100 d-flex align-items-center justify-content-center text-center" id="accueil">
@@ -158,6 +158,6 @@ $meta_description = 'Orée, table gastronomique à Annecy, dans le domaine de la
 		</div>
 	</section>
 
-	<?php require_once 'modal.inc.php'; ?>
+	<?php require_once 'inc/modal.inc.php'; ?>
 
-<?php require_once 'footer.inc.php'; ?>
+<?php require_once 'inc/footer.inc.php'; ?>

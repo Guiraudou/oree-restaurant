@@ -3,4 +3,8 @@
 
 .idea/
 
+node_modules/
+dist/
+
 secret.ini
+assets/carte/archives/
