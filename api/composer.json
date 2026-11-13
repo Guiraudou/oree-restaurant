@@ -1,0 +1,21 @@
+{
+	"name": "oree/restaurant-api",
+	"description": "Backend API of the Orée restaurant website",
+	"type": "project",
+	"license": "proprietary",
+	"require": {
+		"php": "^8.4",
+		"osimatic/core-php": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"Oree\\Api\\": "src/"
+		}
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"allow-plugins": {
+			"php-http/discovery": true
+		}
+	}
+}

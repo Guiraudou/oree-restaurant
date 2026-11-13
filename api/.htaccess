@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Internal files: never served over HTTP
+RewriteRule ^(vendor|src|data|bin)(/|$) - [F,L]
+RewriteRule ^composer\.(json|lock)$ - [F,L]
+
+# Every other URL is handled by the front controller
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]

@@ -4,6 +4,11 @@ import {TelephoneNumber} from '@osimatic/core-js/contact/TelephoneNumber.js';
 import {SocialNetwork} from '@osimatic/core-js/network/SocialNetwork.js';
 import {Organization} from '@osimatic/core-js/organization/Organization.js';
 import {Currency} from '@osimatic/core-js/number/Currency.js';
+import {HTTPClient} from '@osimatic/core-js/network/HTTPClient.js';
+import '@osimatic/core-js/style.css';
+import {FormHelper} from '@osimatic/core-js/form/FormHelper.js';
+
+const errorMessage = 'Une erreur s\'est produite.';
 
 // Popup d'annonce de l'ouverture : affichée au chargement, une seule fois par session
 (function () {
@@ -134,4 +139,44 @@ document.querySelectorAll('[data-instagram]').forEach(function (el) {
 
 	window.addEventListener('scroll', onScroll, {passive: true});
 	onScroll();
+})();
+
+// Connexion à l'administration (modale #modalConnexion) : e-mail et mot de passe
+(function () {
+	var form = document.getElementById('loginForm');
+	if (!form) return;
+	var submitButton = form.querySelector('button[type="submit"]');
+
+	// Messages for the error codes returned by the API
+	var ERRORS = {
+		invalid_credentials: 'Adresse e-mail ou mot de passe incorrect.',
+		too_many_attempts: 'Trop de tentatives. Réessayez dans quelques minutes.',
+	};
+
+	// Sends a JSON request to the API. Never rejects: returns the HTTP status (0 on network error) and the JSON body
+	async function postJson(path, body) {
+		try {
+			var result = await HTTPClient.requestAsPromise('POST', 'api' + path, JSON.stringify(body), {'Content-Type': 'application/json'}, false);
+			return {status: result.response.status, data: result.jsonData || {}};
+		} catch (error) {
+			return {status: error && error.response ? error.response.status : 0, data: (error && error.jsonData) || {}};
+		}
+	}
+
+	form.addEventListener('submit', async function (event) {
+		event.preventDefault();
+		FormHelper.buttonLoader(submitButton, 'start');
+
+		var result = await postJson('/auth/login', {
+			email: document.getElementById('loginEmail').value,
+			password: document.getElementById('loginPassword').value,
+		});
+		if (200 === result.status) {
+			window.location.href = 'admin/';
+			return;
+		}
+		FormHelper.hideFormErrors(form.closest('.modal'));
+		FormHelper.displayFormErrorsFromText(form, ERRORS[result.data.error] || errorMessage);
+		FormHelper.buttonLoader(submitButton, 'reset');
+	});
 })();

@@ -65,6 +65,8 @@ h4 { font-weight: 400; font-size: 1.1rem; margin: 0; }
 .btn-oree--dark { --bs-btn-color: var(--terracotta); --bs-btn-border-color: var(--terracotta); --bs-btn-hover-color: var(--nude); --bs-btn-hover-bg: var(--terracotta); --bs-btn-hover-border-color: var(--terracotta); --bs-btn-active-color: var(--nude); --bs-btn-active-bg: var(--terracotta); --bs-btn-active-border-color: var(--terracotta); }
 .modal-oree .modal-content { background: var(--nude); color: var(--ink); padding: .5rem 1rem 1rem; }
 .modal-oree .modal-title { font-size: clamp(1.5rem, 3vw, 2rem); }
+.modal-oree .form-label { font-weight: 600; color: var(--ink); margin-bottom: 0; }
+.form-group { margin-bottom: 1rem; }
 .btn-oree--big { --bs-btn-padding-x: 2.6em; --bs-btn-padding-y: 1em; --bs-btn-bg: var(--nude); --bs-btn-color: var(--forest); --bs-btn-hover-bg: transparent; --bs-btn-hover-color: var(--nude); }
 
 /* Header */

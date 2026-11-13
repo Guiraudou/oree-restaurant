@@ -3,11 +3,11 @@
 	<div class="modal-dialog modal-dialog-centered">
 		<div class="modal-content">
 			<div class="modal-header border-0 pb-0">
-				<p class="eyebrow text-uppercase text-terracotta mb-0">Offrir</p>
+				<h2 class="modal-title" id="modalOffrirLabel">Offrir</h2>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
 			</div>
 			<div class="modal-body">
-				<h2 class="modal-title mb-3" id="modalOffrirLabel">Offrir un moment chez Orée</h2>
+				<p class="eyebrow text-uppercase text-terracotta mb-2">Offrir un moment chez Orée</p>
 				<p class="lead">Envie de faire plaisir à vos proches ?</p>
 				<p>Offrez-leur une expérience gourmande chez Orée, à travers un bon cadeau personnalisé.</p>
 				<p>Pour créer votre bon cadeau sur mesure, contactez-nous directement par téléphone ou par e-mail. Nous serons ravis de vous accompagner dans votre choix.</p>
@@ -33,17 +33,40 @@
 	</div>
 </div>
 
+<!-- Modal Connexion (administration) -->
+<div class="modal fade modal-oree" id="modalConnexion" tabindex="-1" aria-labelledby="modalConnexionLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header border-0 pb-0">
+				<h2 class="modal-title" id="modalConnexionLabel">Connexion</h2>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+			</div>
+			<div class="modal-body">
+				<form id="loginForm">
+					<div class="form-group">
+						<label for="loginEmail" class="form-label">Adresse email :</label>
+						<input type="email" id="loginEmail" name="email" class="form-control bg-white text-dark" autocomplete="username" required>
+					</div>
+					<div class="form-group">
+						<label for="loginPassword" class="form-label">Mot de passe :</label>
+						<input type="password" id="loginPassword" name="password" class="form-control bg-white text-dark" autocomplete="current-password" required>
+					</div>
+					<button type="submit" class="btn btn-oree btn-oree--dark w-100" data-loading-text="Connexion…">Se connecter</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
 <!-- Modal Mentions légales -->
 <div class="modal fade modal-oree" id="modalMentionsLegales" tabindex="-1" aria-labelledby="modalMentionsLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
 		<div class="modal-content">
 			<div class="modal-header border-0 pb-0">
-				<p class="eyebrow text-uppercase text-terracotta mb-0">Informations légales</p>
+				<h2 class="modal-title" id="modalMentionsLabel">Mentions légales</h2>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
 			</div>
 			<div class="modal-body">
-				<h2 class="modal-title mb-4" id="modalMentionsLabel">Mentions légales</h2>
-
 				<h3 class="fs-5 text-terracotta">Éditeur du site</h3>
 				<p class="small">
 					<?= SITE_NAME ?> — <?= COMPANY_LEGAL_FORM ?> au capital de <span data-capital="<?= COMPANY_CAPITAL ?>"><?= number_format(COMPANY_CAPITAL, 0, ',', ' ') ?> €</span><br>
